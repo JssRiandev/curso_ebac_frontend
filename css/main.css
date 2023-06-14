@@ -1,0 +1,123 @@
+*{ /* o asterístico antes da chave significa que está mudando todos os elementos da página */
+    box-sizing: border-box; /* responsável por "obrigar" o navegador a utilizar os tamanhos que eu especificar para margens, bordas, alturas e larguras de um elemento  */
+    margin: 0; /* Funciona como uma margem de caderno, que separa o elemento tanto na horizontal quanto para a vertical  */
+    padding: 0; /*espaçamento interno em torno do elemento*/
+}
+body>header{ /*Reponsável por fazer editar somente o 1° header após a tag body*/
+    font-size: 24px; /*Definindo o tamanho da fonte*/
+    background-color: #333; /* Trocando a cor de fundo */
+    padding: 16px 0; /*Adicionando um espaçamento de 16px na parte superior e de 0 nos extremos*/
+    color: #fff;; /*Definindo a cor do texto*/
+
+}
+header .container{ /* Responsável por editar os elementos que estão dentro da div container na tag header do html  */
+    display: flex; /* Responsável por colocar todos os elementos da tag um ao lado do outro */
+    align-items: center; /*Responsável por alinhar os itens da tag*/
+    justify-content: space-between; /*Responsável por separar os itens igualmente*/
+}
+
+header li { /* Responsável por editar todos os elementos de lista(li) que estão dentro da tag header do html */
+    display: inline; /* Resposável por deixar os elementos da lista em linha */
+    font-family: Arial, Helvetica, sans-serif; /*Definindo a fonte*/
+    font-weight: bold; /*Colocando negrito*/
+    margin-left: 16px; /*Deslocando a margem para separar os botões*/
+}
+
+header li a { /*Responsável por editar todos os elementos da tag reader que estão na tag li e que estão dentro da tag a*/
+    font-size: 20px; /*Definindo o tamanho da fonte*/
+    color: rgb(255, 255, 255); /*Cor do texto dos links*/
+    text-decoration: none; /*Tirando as decorações do texto*/
+}
+
+header li a:hover { /*Selecionando os mesmos elementos da seção anterior e adicionando um efeito aos botões*/
+    text-decoration: underline;/*Definindo o efeito que será adicionado aos botões*/
+}
+
+.container { /*Reponsável por editar todos os elementos da classe container. Esse seletor tem como objetivo adaptar o tamanho da tela para qualquer que seja o dispositivo do usuário */
+    width: 1366px; /* Ajustanto a largura da tela */
+    margin: 0 auto; /* Ajustando a margem. Definindo 0 para o topo/baixo e ajuste automático para os extremos*/
+}
+
+.articles{ /*Responsável por editar todos os elementos da classe articles*/
+display: flex; /*Responsável por organizar os artigos de forma dinâmica, se reorganizando de acordo com a necessidade */ 
+flex-wrap: wrap; /* Responsável por "quebrar a linha" e permitir que fiquem somente 3 imagens por linha */
+justify-content: space-between; /* Responsável por dividir os 10% de largura restante em margens iguais entre os artigos */
+}
+.articles article img{ /*Responsável por editar todas as imagens que estiverem na tag article*/
+    width: 100%; /*Responsável por deixar a largura das imagens com 100% da largura dos artigos.*/
+}
+
+.articles article{ /*Responsável por editar todos os elementos da classe articles*/
+    width: 30%; /* Ajustando para a largura dos artigos ocupar 30% do tamanho da tela, ou seja, vamos ter no máximo 3 artigos por "linha" */
+}
+section{ /*Reponsável por editar todos os elementos que estão dentro da tag section*/
+    padding: 16px 0; /*Adicionando um espaçamento de 16px na parte superior e de 0 nos extremos*/
+}
+section h2,
+.articles article { /*Responsável por editar o elemento h2 da tag section e os elementos da tag article que estão dentro da classe articles*/
+    margin-bottom: 16px; /*Responsável por editar a margem inferior(bottom)*/
+}
+
+.articles article h3{ /* Responsável por editar os elementos h3 que estão dentro da tag articlee e da classe articles*/
+    margin-top: 8px; /*Responsável por editar a margem superior(top)*/
+    margin-bottom: 8px; /*Responsável por editar a margem inferior*/
+}
+
+.articles article a { /*Responsável por editar os elementos da tag a que estão dentro da classe articles e da tag article*/
+    background-color: rgb(255, 255, 255); /*Mudando a cor de fundo*/
+    color: black; /*Mudando a cor do texto*/
+    padding: 8px; /*Aumentando o espaçamento da cor de fundo*/
+    display: inline-block; /*Impedindo que a cor de fundo atrapalhe no texto*/
+    text-decoration: none; /*Tirando o "sublinhado da palavra*/ 
+    font-weight: bold; /*Colocando negrito na fonte*/
+    margin-top: 8px; /*Responsável por edutar a margem superior*/
+}
+.articles article a:hover { /*Selecionando os mesmos elementos da seção anterior e adicionando um efeito aos botões*/
+    text-decoration: underline; /*Definindo o efeito que será adicionado aos botões*/
+}
+
+.articles article p{ /*Responsável por editar os elementos que estão dentro da classe articles, da tag article e da tag p*/
+    font-family: Arial,helvetica, sans-serif; /*Responsável por trocar a fonte do texto que estão na descrição da noticia*/
+}
+
+.articles article h3 { /*Responsável por editar os elementos que estão dentro da classe articles, da tag article e da tag h3*/
+    font-size: 24px; /*Definindo o tamanho da fonte*/
+}
+section h2{ /*Reponsável por editar todos os elementos que estão dentro da tag section e da tag h2*/
+    font-size: 32px; /*Responsável por definir o tamando da fonte*/
+}
+#esportes{ /*Responsável por editar os elementos que estão no id #esportes */
+    background-color: rgba(0,255,0,0.1); /*Definindo a cor de fundo com o rgba(verm,verd,azu,% da intensidade da cor)*/
+}
+#esportes .articles article a{ /*Responsável por editar os elementos do id esportes que estão na classe articles, tag article e na tag a*/
+    background-color: rgba(0,255,0,0.8); /*Definindo a cor de fundo dos botões com o rgba(verm,verd,azu,% da intensidade da cor)*/
+    color: black; /*Cor do texto*/
+}
+
+#economia{/*Responsável por editar os elementos que do id #economia*/
+    background-color: rgba(205, 250, 0, 0.3); /*Definindo a cor de fundo com o rgba(verm,verd,azu,% da intensidade da cor)*/
+}
+
+#economia .articles article a{ /*Responsável por editar os elementos do id economia que estão na classe articles, na tag article e na tag a */
+    background-color: rgba(205,250,0,1.0);/*Definindo a cor de fundo dos botões com o rgba(verm,verd,azu,% da intensidade da cor)*/
+    color: black;/*Cor do texto*/
+}
+
+#entretenimento{/*Responsável por editar os elementos que do id #entretenimento*/
+    background-color: rgba(128,128,128, 0.4); /*Definindo a cor de fundo com o rgba(verm,verd,azu,% da intensidade da cor)*/
+}
+
+#entretenimento .articles article a{ /*Responsável por editar os elementos do id entretenimento que estão na classe articles, na tag article e na tag a */
+    background-color: rgba(128,128,128, 0.8);/*Definindo a cor de fundo dos botões com o rgba(verm,verd,azu,% da intensidade da cor)*/
+    color: black;/*Cor do texto*/
+}
+
+#tecnologia{/*Responsável por editar os elementos que do id #tecnologia*/
+    background-color: rgba(0,0,255, 0.2); /*Definindo a cor de fundo com o rgba(verm,verd,azu,% da intensidade da cor)*/
+}
+
+#tecnologia .articles article a{ /*Responsável por editar os elementos do id #tecnologia que estão na classe articles, na tag article e na tag a */
+    background-color: rgba(0,0,255, 0.6);/*Definindo a cor de fundo dos botões com o rgba(verm,verd,azu,% da intensidade da cor)*/
+    color: black;/*Cor do texto*/
+}
+
