@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #faf7f7;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+section {
+    padding: 8px 0;
+}
+section p{
+    margin-bottom: 6px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+form {
+    margin-top: 6px;
+}
+
+input, button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
+}
+
+button {
+    background-color: #333;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+.success-message {
+    background-color: #27ae60;
+    padding: 16px;
+    color: #fff;
+    display: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.error-message{
+    padding: 8px;
+    background-color: red;
+    color:#fff;
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: none;
+}
+.warning-message{
+    padding: 8px;
+    background-color: orange;
+    color:#fff;
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: none;
+
+}
+.success-message-img {
+    margin-top: 16px;
+    height: 378px; /*Definindo a altura do banner*/
+    background: url(imagens/success-image.jpg) no-repeat center; 
+    display: none;
+}
+
+.error-message-img{
+    margin-top: 16px;
+    height: 424px; /*Definindo a altura do banner*/
+    background: url(imagens/error-image.jpg) no-repeat center; 
+    display: none;
+}
+.warning-message-img{
+    margin-top: 16px;
+    height: 487px;
+    background: url(imagens/warning-image.jpg) no-repeat center;  
+    display: none;
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML com JS - Exercício de validação</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Validação - JavaScript</h1>
+    <section id="paragrafos">
+        <p>
+        Você terá a simples missão de digitar um número em cada campo do formulário abaixo. Porém, se atente ao seguinte critério:
+        <mark>o formulário só será válido se o número digitado no campo A for menor que o número digitado no campo B!</mark> 
+        </p>
+        <p>
+        Após terminar de preencher, clique no botão <b>validar</b> para verificar se seus números são válidos ou não!<br>
+        Por favor, teste todas as possibilidades, nunca se sabe o que você poderá encontrar!!! 
+        </p> 
+    </section>
+        <form id="form-deposito">
+            <div class="campos">
+            <input type="number" id="campo-A" required placeholder="Campo A : digite um número" />
+            <p class="error-message">
+                Erro! O número do campo A não pode ser maior que o número do campo B.
+            </p>
+            <p class = "warning-message">
+                Atenção! O número do campo A não pode ser igual ao número do campo B.
+            </p>
+            <input type="number" id="campo-B" required placeholder="Campo B: digite um número" />
+            </div>
+            <button id="validar" type="submit">Validar</button>
+        </form>
+        <P class="success-message"></P>
+
+        <div class="error-message-img"> </div>
+        <div class="warning-message-img"></div>
+        <div class="success-message-img"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
