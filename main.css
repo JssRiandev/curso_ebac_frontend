@@ -1,0 +1,72 @@
+*{ /*o asterístico antes da chave significa que está mudando todos os elementos da página*/
+    margin: 0; /*Removendo a margem*/
+    padding: 0; /*Removendo o padding*/
+    box-sizing: border-box; /*Fazendo o navegador utilizar os tamanhos que eu especificar, sem somar com os já existentes*/
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color:#f7f9ea; /*Definindo a cor de fundo*/
+}
+
+header { /*Editando todos os elementos da tag header*/
+    background-color: #333333; /*Definindo a cor de fundo*/
+    padding: 16px 0; /*Definindo 16px de expessura superior/inferior e 0 de esquerda/direita */
+    color: white; /*Definindo a cor do texto*/
+    display: flex; /*Colocando os elementos da tag em uma única linha*/
+    justify-content: center; /*Definindo que o conteúdo da tag irá ficar no centro*/
+    text-transform: uppercase; /*Definindo que o texto escrito ficará com letra maiúscula*/
+    font-style: italic ; /*Colocando a fonte em itálico*/
+}
+
+header button{ /*Editando as tags button que estão dentro da tag header*/
+    margin-left: 16px; /*Definindo uma margem à esquerda para separar o título do botão de nova imagem*/
+}
+
+.container{ /*Editanto todos os elementos da classe container*/
+    max-width: 600px; /*Definindo a largura máxima*/
+    width: 100%;/*Definindo que o conteúdo irá ocupar 100% da largura*/
+    margin: 0 auto; /*Centralizando os elementos*/
+}
+
+form{ /*Editando todos os elementos que estão dentro da tag form*/
+    padding: 24px 0; /*Definindo 24px de expessura superior/inferior e 0 de esquerda/direita*/ 
+    text-align: center; /*Alinhando os elementos no centro*/ 
+    display: none; /*Definindo que, inicialmente o conteúdo da tag não estará visível*/
+    
+}
+
+input, button{ /*Editando todos os elementos que estão dentro das tags input e button*/ 
+    padding: 8px; /*Definindo 8px de expessura*/ 
+}
+
+button { /*Editando todos os elementos da tag button*/ 
+    background-color:gold; /*Definindo a cor de fundo*/ 
+    border:none; /*Retirando as demais bordas*/ 
+    border-bottom: 3px solid black; /*Adicionando somente bordas inferiores*/ 
+    cursor: pointer; /*Definindo que, ao passar o mouse por cima, o cursor será um ponteiro*/ 
+    font-weight: bold; /*Colocando a fonte em negrito*/ 
+    text-transform: uppercase; /*Definindo que todo o texto escrito ficará com letra maiúscula*/ 
+    color: black; /*Definindo a cor do texto*/ 
+}
+
+#botao-cancelar{ /*Editando o elemento do id botao-cancelar*/ 
+    background-color: purple; /*Definindo a cor de fundo*/
+    color: white; /*Definindo a cor do texto*/ 
+}
+
+ol{ /*Editando todos os elementos da tag ol*/ 
+    padding: 16px; /*Separando o formulário da lista*/
+}
+
+ol li{ /*Editando todos os elementos da tag li que estão dentro da tag ol*/
+    font-size: 18px; /*Definindo o tamanho da fonte*/ 
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px; /*Adicionando um pequeno espaçamento entre os elementos da lista*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /*Adicionando a linha "transparente" para separar os conteúdos*/
+    cursor: pointer;
+}
+
+.tarefa-lista{ /*Editando todos os elementos da classe tarefa-lista*/
+    text-decoration: line-through; /*Adicionando um risco nas palavras*/
+}
