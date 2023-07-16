@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden; /*Todo conteúdo que ultrapassar o eixo x será escondido*/
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(99, 127, 96);
+    padding: 16px 0;
+    
+
+}
+header .title{
+    display: flex;
+    font-size: 24px;
+    padding-bottom: 6px;
+    align-items: center;
+}
+
+header .subtitle{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+header img{
+    height: 50px;
+    margin-right: 16px;
+}
+button{
+    background-color:gold;
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+}
+body{
+    background-color: rgb(211, 236, 227);
+}
+.form-campo{
+    margin-bottom: 16px;
+}
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+form{
+    display: none;
+    font-size: 18px;
+}
+#carousel-imagens img{
+    padding-top: 16px;
+    height: 230px;
+}
+.slick-prev, .slick-next {
+    display: none !important; /*Retirando as setas de imagem anterior e próxima*/
+}
+form button{
+    width: 100px;
+}
+form h3{
+    margin: 16px 0;
+    text-align: center;
+    font-size: 23px;
+}
+
+
