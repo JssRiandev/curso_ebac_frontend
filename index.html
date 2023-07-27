@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+    <div class="container">
+        <div class="row"> <!-- criando uma div de linha -->
+            <div class="col"> <!-- Criando uma div de coluna-->
+                <form> <!-- abrindo uma tag de formulário -->
+                    <label class="form-label" for="Nome">Seu nome:</label> <!-- Criando o label do nome -->
+                    <input class="form-control" type="text" id="nome" /> <!-- Criando a caixa de seleção do nome  -->
+                    <label class="form-label" for="e-mail">Seu e-mail:</label> <!-- Criando o label do email-->
+                    <input class="form-control" type="email" id="email" /> <!-- Criando a caixa de seleção do email  -->
+                    <label class="form-label" for="Telefone">Seu telefone:</label> <!-- Criando o label do telefone -->
+                    <input class="form-control" type="tel" id="telefone" /> <!-- Criando a caixa de seleção do telefone  -->
+                    
+                    <div class="form-check form-switch"> <!-- Criando a classe com um botão de switch  -->
+                        <input class="form-check-input" type="checkbox" id="aceito-termo"> <!-- Criando o input do checkbox  -->
+                    <label class="form-check-label" for="aceito-termo">Li e concordo com os termos do site</label> <!-- Criando o label e a mensagem do checkbox dos termos-->
+                    </div> 
+                    <button class="btn btn-success">Enviar</button> <!-- Criando um botão para enviar o formulário -->
+                </form> <!-- Fechando a tag do formulário-->
+            </div> <!-- fechando div da coluna-->
+        </div> <!-- fechando a div da linha -->
+    </div>
+</body>
+</html>

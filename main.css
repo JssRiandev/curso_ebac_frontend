@@ -1,0 +1,17 @@
+
+body{
+    background-color: rgb(208, 236, 240);
+}
+header{
+    width: 100%;
+    background-color:rgb(88, 176, 231);
+    border-bottom: 5px solid blue;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.row{
+    margin-top: 32px;
+    font-weight: bold;
+}
