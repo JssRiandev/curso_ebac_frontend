@@ -1,0 +1,49 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+.navbar{
+    background-color: #e15f41;
+}
+#cabecalho .nav .nav-link.active{
+    background-color: white;
+    color: #e15f41;
+}
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: white;
+}
+.navbar-toggler{
+    background-color: #ffeae6;
+}
+.carousel-inner img{ 
+    width: 100%; /* utilizando para adaptar o tamanho das imagens para telas maiores */
+}
+.section-title{
+    font-family: pacifico, cursive;
+}
+#sobre, #cardapio{
+    background-color:#ffeae6;
+}
+.text-colored{
+    color: #e15f41;
+}
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #e15f41;
+    color: white;
+}
+.nav-cardapio .nav-link:hover{
+    color: #e15f41;
+}
+.social-links{
+    list-style: none;
+    display: inline-flex;
+}
+
+@media (max-width:767px) {
+    .carousel-item img{
+        height: 280px;
+    }
+}
