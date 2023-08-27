@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebac tech</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho"> <!-- criando um menu de navegação, fazendo os elementos ficarem sempre expandidos e fixando o cabeçalho ao rolar a página -->
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">EBAC tech</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"> <!-- Fazendo o menu se expandir ao clicar(somente mobile)-->
+                <span class="navbar-toggler-icon"></span> <!-- Cirando a aparência do menu hamburguer -->
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao"> <!-- Criando a classe para permitir a expansão e colocando os botões no fim do cabeçalho -->
+                <ul class="nav nav-pills d-block d-md-flex"> <!-- tirando os . da lista, deixando um ao lado do outro na versão desktop e um embaixo do outro na versão mobile  -->
+                    <li class="nav-item fw-bold"> <!-- Deixando os links com aparência de botão e em negrito -->
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i> <!-- Adicionando os ícones do bootstrap -->
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#serviços" class="nav-link">
+                            <i class="bi bi bi-card-text me-1"></i>
+                            Nossos serviços
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#categorias" class="nav-link">
+                            <i class="bi bi-layers-fill me-1"></i>
+                            Categorias
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel"> <!-- fazendo as imagens do carousel mudarem automaticamente -->
+                <div class="carousel-inner"> <!-- Div que contém as imagens do carousel -->
+                    <div class="carousel-item active" data-bs-interval="5000"> <!--Definindo a div da primeira imagem, marcando ela como ativa e definindo um intervalo de 5s entre cada slide -->
+                        <img src="https://wallpapercave.com/wp/wp4460334.jpg" alt="Foto do restaurante internamente">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://wallpapercave.com/wp/wp2900072.png" alt="Foto de uma taça de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2021/05/ps5-playstation-5-xbox-series-x-nintendo-switch-scaled.jpg" alt="Foto de comidas em panelas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"> <!-- Criando o ícone de voltar a imagem -->
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"> <!-- Criando o ícone de passar a imagem -->
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators"> <!-- Criando os indicadores das imagens -->
+                    <button type="button"data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button"data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button"data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="https://th.bing.com/th/id/R.119f60f013f299f730edf422364684f7?rik=%2fi3crGlc2LiDvQ&pid=ImgRaw&r=0" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a loja</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo aspernatur dolores eos nobis ipsum inventore ut corporis corrupti blanditiis, debitis, magnam cumque quaerat sequi! Minus ut debitis vitae ex?
+                            </p>
+                            <h3 class="section-title">Nossas <span class="text-colored">Unidades</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptas amet reiciendis soluta rerum, aspernatur tempore sequi, architecto culpa iste esse ex eum optio ut nemo. Optio, aliquid aut. Sapiente.
+                            </p>
+                            <ul>
+                                <li>Cidade 1</li>
+                                <li>Cidade 2</li>
+                                <li>Cidade 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="serviços" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center">O que você pode <span class="text-colored">encontrar</span></h2>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <img src="https://th.bing.com/th/id/OIP.WeYfi-b4tmtKDSPesd84hQHaE8?w=278&h=185&c=7&r=0&o=5&pid=1.7" alt="" class="d-block w-100 h-50 rpunded mb-2">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cpu-fill"></i>
+                                Assistência técnica
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro veritatis aliquam distinctio pariatur ea asperiores? Voluptatem officiis earum debitis doloremque suscipit obcaecati ullam rem, nam tempora eligendi, laudantium modi porro?
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://www.turn-on.de/media/cache/article_images/media/cms/2016/08/Xbo--One-S-28.jpg?890000" alt="" class="d-block w-100 h-50 rpunded mb-2">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-controller"></i>
+                                Consoles e PCs
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro veritatis aliquam distinctio pariatur ea asperiores? Voluptatem officiis earum debitis doloremque suscipit obcaecati ullam rem, nam tempora eligendi, laudantium modi porro?
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://th.bing.com/th/id/R.1af5bbff8496b200fb43b989ecd5feed?rik=vWpGHM0W2C5r2g&pid=ImgRaw&r=0" alt="" class="d-block w-100 h-50 rpunded mb-2">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-headset"></i>
+                                Produtos e periféricos
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro veritatis aliquam distinctio pariatur ea asperiores? Voluptatem officiis earum debitis doloremque suscipit obcaecati ullam rem, nam tempora eligendi, laudantium modi porro?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="categorias" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Escolha <span class="text-colored">o que desejar</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-categoria"> <!-- Criando o menu de navegação do cardápio -->
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#assistencia" class="fw-bold text-start nav-link text-colored active">Assistência técnica</button> <!-- Programando o comportamento de abrir cada seção ao clicar no nome -->
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#consoles" class="fw-bold text-start nav-link text-colored ">Consoles</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#computadores" class="fw-bold text-start nav-link text-colored ">Computadores</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#perifericos" class="fw-bold text-start nav-link text-colored ">Periféricos externos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#jogos" class="fw-bold text-start nav-link text-colored ">Jogos</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="assistencia">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://i.zst.com.br/thumbs/12/28/13/1967454404.jpg" alt="computador">
+                                        <h5 class="text-colored fw-bold mt-2">Computador</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://i.zst.com.br/thumbs/12/16/1c/145727464.jpg" alt="Playstation">
+                                        <h5 class="text-colored fw-bold mt-2">Playstation</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://m.media-amazon.com/images/I/71NBQ2a52CL.jpg" alt="Xbox">
+                                        <h5 class="text-colored fw-bold mt-2">Xbox</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://www.kadri.com.br/imgsite/produtos/amp-40125-1.jpg" alt="Nintendo">
+                                        <h5 class="text-colored fw-bold mt-2">Nintendo</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="consoles">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://i.zst.com.br/thumbs/12/16/1c/145727464.jpg" alt="Playstation">
+                                        <h5 class="text-colored fw-bold mt-2">Playstation</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://m.media-amazon.com/images/I/71NBQ2a52CL.jpg" alt="Xbox">
+                                        <h5 class="text-colored fw-bold mt-2">Xbox</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://www.kadri.com.br/imgsite/produtos/amp-40125-1.jpg" alt="Nintendo">
+                                        <h5 class="text-colored fw-bold mt-2">Nintendo</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="computadores">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://i.zst.com.br/thumbs/12/28/13/1967454404.jpg" alt="computador1">
+                                        <h5 class="text-colored fw-bold mt-2">Computador 1</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50 " src="https://m.media-amazon.com/images/I/71YA4qtn2JL._AC_UF894,1000_QL80_.jpg" alt="computador 2">
+                                        <h5 class="text-colored fw-bold mt-2">Computador 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50 " src="https://images.tcdn.com.br/img/img_prod/1041964/computador_escritorio_i7_4th_h85_ddr3_8gb_ram_ssd_240gb_1783_1_e70490a4ff98e6a13e2430b024f59256.jpg" alt="computador 3">
+                                        <h5 class="text-colored fw-bold mt-2">Computador 3</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50 " src="https://m.media-amazon.com/images/I/41SOnElKZmS.jpg" alt="laptop">
+                                        <h5 class="text-colored fw-bold mt-2">Laptop</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="perifericos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://m.media-amazon.com/images/I/41zEY42v1tL.jpg" alt="mouse">
+                                        <h5 class="text-colored fw-bold mt-2">Mouse</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://m.media-amazon.com/images/I/61P+CC8hGHL._AC_UF894,1000_QL80_.jpg" alt="Teclado">
+                                        <h5 class="text-colored fw-bold mt-2">Teclado</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://m.media-amazon.com/images/I/515NOtUcMlL._AC_UF894,1000_QL80_.jpg" alt="Headset">
+                                        <h5 class="text-colored fw-bold mt-2">Headset</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="jogos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://m.media-amazon.com/images/I/913r59lGp-L._AC_UF1000,1000_QL80_.jpg" alt="Capa do jogo god of war">
+                                        <h5 class="text-colored fw-bold mt-2">God of War</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://m.media-amazon.com/images/I/81bbAeAG6vS.jpg" alt="Capa do jogo Red dead redemption 2">
+                                        <h5 class="text-colored fw-bold mt-2">Red Dead Redemption 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 h-50" src="https://m.media-amazon.com/images/I/71pNu+RikwL.jpg" alt="Capa do jogo The witcher 3">
+                                        <h5 class="text-colored fw-bold mt-2">The Witcher 3</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-2 me-2">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p> 
+                                Rua teste exemplo n° 145, Bairro Bootstrap - Html - CSS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
