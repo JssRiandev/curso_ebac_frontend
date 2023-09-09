@@ -1,0 +1,6 @@
+@use 'variaveis';
+
+body {
+    font-size: variaveis.$fonte_titulo;
+    color: variaveis.$cor_titulo;
+}
