@@ -1,0 +1,102 @@
+@import "maps.less";
+@breakpoint_tablet: ~"(max-width:1023px)";
+@breakpoint_cell: ~"(max-width:767px)";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    background-color: #colors[main_color];
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 16px 0;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    display: flex;
+
+    li{
+        padding-left: 24px;
+        font-weight: bold;
+        
+        a{
+            color: #colors[text_color];
+            text-decoration: none;
+        }
+    }
+}
+
+section{
+    padding: 56px 0;
+}
+
+.product{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    &-item img{
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    &-button{
+        background-color: #colors[button_color];
+        display: block;
+        color: #colors[text_color];
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 0;
+        border-radius: 8px;
+        margin-top: 8px;
+
+        &:hover{
+            background-color: #colors[button_color_hover];
+        }
+    }
+}
+
+@media @breakpoint_tablet{
+    .container{
+        max-width: 80%;
+    }
+    .product{
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media @breakpoint_cell{
+    
+    .product{
+        display: block;
+
+        &-item{
+            margin-bottom: 32px;
+        }
+    }
+}
