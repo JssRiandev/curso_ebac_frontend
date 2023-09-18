@@ -1,0 +1,29 @@
+@use 'config/variaveis';
+@use 'config/reset';
+
+.produtos {
+    max-width: 640px;
+    width: 100%;
+    margin: 56px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1%;
+}
+
+.produto{
+    &__imagem{
+        width: 100%;
+    }
+    &__nome{
+        font-size: 1.2em;
+        margin: 8px 0;
+    }
+    &__descricao{
+        color: variaveis.$cor_descricao;
+    }
+    &__em--destaque{
+        border: 2px solid variaveis.$cor_borda_destaque;
+        padding: 8px;
+        background-color: variaveis.$cor_fundo_destaque;
+    }
+}
